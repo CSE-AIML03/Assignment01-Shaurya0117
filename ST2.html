@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Responsive Student Profile Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #fff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card .content {
+            padding: 20px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .info {
+            margin-top: 15px;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .info p span {
+            font-weight: bold;
+            color: #222;
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="content">
+            <h2>Shaurya Pratap Singh</h2>
+            <p>B.Tech - Computer Science AIML</p>
+
+            <div class="info">
+                <p><span>Roll No:</span> 2025B15310117</p>
+                <p><span>Year:</span> 1ST Year</p>
+                <p><span>Email:</span> shaurya@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
